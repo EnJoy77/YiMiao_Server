@@ -19,7 +19,7 @@ class UserController {
     const res = await selectUser()
     console.log(res)
     ctx.body = {
-      code:0,
+      code:200,
       message:'查询成功',
       result:{
         'users_account' : res[0].dataValues.users_account,
